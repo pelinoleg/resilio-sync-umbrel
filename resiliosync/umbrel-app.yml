@@ -5,7 +5,7 @@ tagline: Automated File Synchronization
 icon: https://global.synologydownload.com/download/Package/img/resiliosync/2.7.2.1375-3152/thumb_256.png
 category: files
 version: "1.0.0"
-port: 8889
+port: 8888
 description: >-
   A Docker container for ResilioSync, allowing automated synchronization of files across devices.
 
