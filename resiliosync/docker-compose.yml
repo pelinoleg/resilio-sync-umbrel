@@ -13,7 +13,7 @@ services:
     volumes:
       - /home/umbrel/umbrel/my-configs/resiliosync-config:/config
       - /home/umbrel/umbrel/data/storage/resiliosync/downloads:/downloads
-      - /home/umbrel/umbrel/data/storage/resiliosync/sync:/sync
+      - /home/umbrel/umbrel/data/storage:/sync
     ports:
       - 8888:8888
       - 55555:55555
