@@ -1,0 +1,19 @@
+version: '3.7'
+
+	  
+services:
+  resilio-sync:
+    image: lscr.io/linuxserver/resilio-sync:latest
+    container_name: resilio-sync
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Madrid
+    volumes:
+      - /home/umbrel/umbrel/data/storage/my-apps-config/resiliosync:/config
+      - /home/umbrel/umbrel/data/storage/resiliosync/downloads:/downloads
+      - /home/umbrel/umbrel/data/storage/resiliosync/sync:/sync
+    ports:
+      - 8889:8889
+      - 55555:55555
+	  restart: unless-stopped	  
