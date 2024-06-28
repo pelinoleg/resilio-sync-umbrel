@@ -11,7 +11,7 @@ services:
       - PGID=1000
       - TZ=Europe/Madrid
     volumes:
-      - /home/umbrel/umbrel/data/storage/my-apps-config/resiliosync:/config
+      - /home/umbrel/umbrel/my-configs/resiliosync-config:/config
       - /home/umbrel/umbrel/data/storage/resiliosync/downloads:/downloads
       - /home/umbrel/umbrel/data/storage/resiliosync/sync:/sync
     ports:
